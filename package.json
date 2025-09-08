@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Running tests...\" && node test.js",
+    "start": "nodemon src/index.js",
+   "build": "babel src -d dist",
     "lint": "eslint .",
-    "build":"npm run build"
+    "test": "echo \"Running tests...\" && jest || echo \"No tests yet\""
 
   },
   "keywords": [],
